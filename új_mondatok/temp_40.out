@@ -1,0 +1,61 @@
+0 ||:NYITO|	|Nom:teljes#Adj+Adj+macro_NPMod+Sg|	|Det:a#Det+Def
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:teljes#Adj+Adj+macro_NPMod+Sg|	|Det:a#Det+Def|	|Nom:káosz#N+N+Sg
+[ anal  = 'Nom:teljes#Adj+Adj+macro_NPMod+Sg'     ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Sg', 'Adj'}) ]
+[ stem  = 'teljes#Adj'                            ]
+[ tok   = 'Teljes'                                ]
+
+2 Det:a#Det+Def|	|Nom:káosz#N+N+Sg|	|Det:a#Det+Def
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+3 Nom:káosz#N+N+Sg|	|Det:a#Det+Def|	|Nom:kötelező#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 3 2 Black Det
+ÉL KÉSZÜLT 3 1 Black Adj
+[ anal  = 'Nom:káosz#N+N+Sg'     ]
+[ main  = 'Nom'                  ]
+[ other = frozenset({'N', 'Sg'}) ]
+[ stem  = 'káosz#N'              ]
+[ tok   = 'káosz'                ]
+
+4 Det:a#Det+Def|	|Nom:kötelező#Adj+Adj+macro_NPMod+Sg|	|Nom:biztosítás#N+N+Pl
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+5 Nom:kötelező#Adj+Adj+macro_NPMod+Sg|	|Nom:biztosítás#N+N+Pl|	|PostP:körül#PostP+PostP+PUNCT
+[ anal  = 'Nom:kötelező#Adj+Adj+macro_NPMod+Sg'   ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Sg', 'Adj'}) ]
+[ stem  = 'kötelező#Adj'                          ]
+[ tok   = 'kötelező'                              ]
+
+6 Nom:biztosítás#N+N+Pl|	|PostP:körül#PostP+PostP+PUNCT|	|||:NYITO
+ÉL KÉSZÜLT 6 4 Black Det
+ÉL KÉSZÜLT 6 5 Black Adj
+ÉL KÉSZÜLT 7 6 Black körül#PostP
+[ anal  = 'Nom:biztosítás#N+N+Pl' ]
+[ main  = 'PostP'                 ]
+[ other = frozenset({'N', 'Pl'})  ]
+[ stem  = 'biztosítás#N'          ]
+[ tok   = 'biztosítások'          ]
+
+7 PostP:körül#PostP+PostP+PUNCT|	|||:NYITO|	|||:NYITO
+[ anal  = 'PostP:körül#PostP+PostP+PUNCT' ]
+[ main  = 'PostP'                         ]
+[ other = frozenset({'PUNCT', 'PostP'})   ]
+[ stem  = 'körül#PostP'                   ]
+[ tok   = 'körül.'                        ]
+

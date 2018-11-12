@@ -1,0 +1,31 @@
+0 ||:NYITO|	|PostP:szerint#PostP+Sg1_Pron|	|MOD:nemsokára#Adv
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 PostP:szerint#PostP+Sg1_Pron|	|MOD:nemsokára#Adv|	|PreV:el#PreV
+[ anal  = 'PostP:szerint#PostP+Sg1_Pron' ]
+[ main  = 'PostP'                        ]
+[ other = frozenset({'Sg1_Pron'})        ]
+[ stem  = 'szerint#PostP'                ]
+[ tok   = 'Szerintem'                    ]
+
+2 MOD:nemsokára#Adv|	|PreV:el#PreV|	|FIN:fog#V+V+acc_Def+Dec+Pres+nom_Sg2_Pron+acc_SgPl3
+[ anal  = 'MOD:nemsokára#Adv' ]
+[ main  = 'MOD'               ]
+[ other = frozenset()         ]
+[ stem  = 'nemsokára#Adv'     ]
+[ tok   = 'nemsokára'         ]
+
+3 PreV:el#PreV|	|FIN:fog#V+V+acc_Def+Dec+Pres+nom_Sg2_Pron+acc_SgPl3|	|Inf:akar#V+V
+[ anal  = 'PreV:el#PreV' ]
+[ main  = 'PreV'         ]
+[ other = frozenset()    ]
+[ stem  = 'el#PreV'      ]
+[ tok   = 'el'           ]
+
+4 FIN:fog#V+V+acc_Def+Dec+Pres+nom_Sg2_Pron+acc_SgPl3|	|Inf:akar#V+V|	|Inf:ad#V+V
+ÉL KÉSZÜLT 4 3 Blue Focus
+ÉL KÉSZÜLT 4 2 Red MOD

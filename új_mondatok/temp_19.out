@@ -1,0 +1,26 @@
+0 ||:NYITO|	|FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3|	|Acc:Mari#N+N+Sg+PropN+PUNCT
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3|	|Acc:Mari#N+N+Sg+PropN+PUNCT|	|||:NYITO
+ÉL KÉSZÜLT 1 1 Blue Focus
+ÉL KÉSZÜLT 0 1 Black Fin
+[ anal  = 'FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3'                ]
+[ main  = 'FIN'                                                              ]
+[ other = frozenset({'Pres', 'acc_Def', 'nom_Sg3', 'V', 'Dec', 'acc_SgPl3'}) ]
+[ stem  = 'szeret#V'                                                         ]
+[ tok   = 'Szereti'                                                          ]
+
+2 Acc:Mari#N+N+Sg+PropN+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 2 2 Black Det
+ÉL KÉSZÜLT 1 2 Red Acc
+ÉL KÉSZÜLT 1 1 Black Nom
+[ anal  = 'Acc:Mari#N+N+Sg+PropN+PUNCT'            ]
+[ main  = 'Acc'                                    ]
+[ other = frozenset({'N', 'PUNCT', 'PropN', 'Sg'}) ]
+[ stem  = 'Mari#N'                                 ]
+[ tok   = 'Marit.'                                 ]
+

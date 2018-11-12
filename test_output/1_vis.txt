@@ -1,0 +1,77 @@
+token 0 # ||
+token 1 Az Det
+token 2 Országgyűlés Nom
+edge Det 2 1 Black
+token 3 elfogadta FIN
+edge Focus 3 3 Blue
+edge PreV 3 3 Black
+edge Nom 3 2 Red
+edge Fin 0 3 Black
+token 4 a Det
+token 5 kormány Nom
+edge Det 5 4 Black
+token 6 őszi Nom
+token 7 adócsomagját. Acc
+edge Det 7 7 Black
+edge Gen 7 5 Red
+edge Adj 7 6 Black
+edge Acc 3 7 Red
+token 8 Legfontosabb Nom
+token 9 elemének Dat
+edge Det 9 9 Black
+edge Adj 9 8 Black
+edge Gen 9 9 Red
+token 10 a Det
+token 11 kabinet Nom
+edge Det 11 10 Black
+token 12 a Det
+token 13 köztehercsökkentést Acc
+edge Det 13 12 Black
+token 14 tartja. FIN
+edge Focus 14 13 Blue
+edge Acc 14 13 Red
+edge Dat 14 9 Red
+edge Nom 14 11 Red
+token 15 A Det
+token 16 változtatások Nom
+edge Det 16 15 Black
+edge miatt#PostP 17 16 Black
+token 17 miatt PostP
+token 18 nő FIN
+edge Focus 18 17 Blue
+edge PostP 18 17 Red
+token 19 a Det
+token 20 kisadózó Nom
+token 21 vállalkozások Nom
+edge Det 21 19 Black
+edge Adj 21 20 Black
+token 22 tételes Nom
+token 23 adójának Dat
+edge Det 23 23 Black
+edge Gen 23 21 Red
+edge Adj 23 22 Black
+token 24 bevételi Nom
+token 25 határa. Nom
+edge Det 25 25 Black
+edge Gen 25 23 Red
+edge Adj 25 24 Black
+edge Nom 18 25 Red
+token 26 Az Det
+token 27 adóhatóság Nom
+edge Det 27 26 Black
+token 28 később MOD
+token 29 szakmai Nom
+token 30 segítségnyújtással Ins
+edge Det 30 30 Black
+edge Adj 30 29 Black
+token 31 támogatja FIN
+edge Focus 31 30 Blue
+edge MOD 31 28 Red
+edge Ins 31 30 Red
+edge Nom 31 27 Red
+token 32 a Det
+token 33 hibázó Nom
+token 34 adózókat. Acc
+edge Det 34 32 Black
+edge PartPres 34 33 Black
+edge Acc 31 34 Red

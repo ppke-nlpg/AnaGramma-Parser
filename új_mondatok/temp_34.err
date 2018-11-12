@@ -1,0 +1,78 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Az Det
+feature Det other 1
+feature Def other 1
+feature Det_Def Def 1
+token 2 eljárások Nom
+feature Nom other 2
+feature N other 2
+feature Pl other 2
+searcher NOM_OR_GEN * None ['>]'] 2
+searcher POSTP_SEARCH * 1 ['>]'] 2
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 2
+searcher Det Det None ['<'] 2
+searcher macro_NPMod * None ['<'] 2
+feature SgPl1_3 Pl 2
+feature occupied {'Det'} 1
+edge Det 2 1 Black
+feature NOM_OR_GEN GEN 2
+token 3 lezárása Nom
+feature Nom other 3
+feature N other 3
+feature Sg other 3
+feature Pers other 3
+feature pers_SgPl3 other 3
+searcher NOM_OR_GEN * None ['>]'] 3
+searcher POSTP_SEARCH * 1 ['>]'] 3
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+searcher Pers Nom None ['<'] 3
+feature Det_Def Indef 3
+feature occupied {'Det'} 3
+edge Det 3 3 Black
+feature occupied {'Gen', 'Pers'} 2
+edge Gen 3 2 Red
+feature NOM_OR_GEN GEN 3
+token 4 nem MOD
+feature MOD other 4
+token 5 előfeltétele Nom
+feature Nom other 5
+feature N other 5
+feature Sg other 5
+feature Pers other 5
+feature pers_SgPl3 other 5
+searcher NOM_OR_GEN * None ['>]'] 5
+searcher POSTP_SEARCH * 1 ['>]'] 5
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 5
+searcher Det Det None ['<'] 5
+searcher macro_NPMod * None ['<'] 5
+feature SgPl1_3 Sg 5
+searcher Pers Nom None ['<'] 5
+feature Det_Def Indef 5
+feature occupied {'Det'} 5
+edge Det 5 5 Black
+feature occupied {'Gen', 'Pers'} 3
+edge Gen 5 3 Red
+feature NOM_OR_GEN ? 5
+token 6 a Det
+feature Det other 6
+feature Def other 6
+feature Det_Def Def 6
+token 7 hiteltárgyalásnak. Dat
+feature Dat other 7
+feature N other 7
+feature Sg other 7
+feature PUNCT other 7
+searcher Det Det None ['<'] 7
+searcher macro_NPMod * None ['<'] 7
+feature SgPl1_3 Sg 7
+feature occupied {'Det'} 6
+edge Det 7 6 Black
+feature || other 8
+feature NYITO other 8
+searcher FIN FIN None ['<', '>'] 8

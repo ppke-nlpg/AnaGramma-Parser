@@ -1,0 +1,28 @@
+token 0 # ||
+token 1 A Det
+token 2 lap Nom
+edge Det 2 1 Black
+token 3 értesülései Nom
+edge Det 3 3 Black
+edge Gen 3 2 Red
+edge szerint#PostP 4 3 Black
+token 4 szerint PostP
+token 5 a Det
+token 6 városhatáron Sup
+edge Det 6 5 Black
+token 7 átlépő Nom
+edge PreV 7 7 Black
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 200, in search
+    self.hit = pool.search_by_condition(self.initiator, self.condition, self.border, till_index, self.unique)
+  File "/home/dlazesz/PycharmProjects/elemzov2/pool.py", line 34, in search_by_condition
+    border_index = self._calculate_border_index(border, initiator)
+  File "/home/dlazesz/PycharmProjects/elemzov2/pool.py", line 20, in _calculate_border_index
+    if len(self.borders[border]) == 0:  # No borders yet -> border_index = 0
+KeyError: None

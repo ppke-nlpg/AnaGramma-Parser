@@ -1,0 +1,9 @@
+0 ||:NYITO|	|FIN:el|veszik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3|	|Det:a#Det+Def
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 FIN:el|veszik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3|	|Det:a#Det+Def|	|Nom:laptop#N+N+Sg+Pers+pers_SgPl3
+ÉL KÉSZÜLT 1 1 Blue Focus

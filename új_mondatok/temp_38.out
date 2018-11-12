@@ -1,0 +1,42 @@
+0 ||:NYITO|	|Dat:Budapest#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Dat:Budapest#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Nom:politikai#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Dat:Budapest#N+N+Sg+PropN'     ]
+[ main  = 'Dat'                           ]
+[ other = frozenset({'PropN', 'Sg', 'N'}) ]
+[ stem  = 'Budapest#N'                    ]
+[ tok   = 'Budapestnek'                   ]
+
+2 Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Nom:politikai#Adj+Adj+macro_NPMod+Sg|	|Nom:kapcsolat#N+N+Pl+Pers+pers_SgPl3
+[ anal  = 'Nom:fontos#Adj+Adj+macro_NPMod+Sg'     ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Adj', 'Sg'}) ]
+[ stem  = 'fontos#Adj'                            ]
+[ tok   = 'fontos'                                ]
+
+3 Nom:politikai#Adj+Adj+macro_NPMod+Sg|	|Nom:kapcsolat#N+N+Pl+Pers+pers_SgPl3|	|FIN:van#V+V+acc_Indef+Dec+Pres+nom_Pl3
+[ anal  = 'Nom:politikai#Adj+Adj+macro_NPMod+Sg'  ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Adj', 'Sg'}) ]
+[ stem  = 'politikai#Adj'                         ]
+[ tok   = 'politikai'                             ]
+
+4 Nom:kapcsolat#N+N+Pl+Pers+pers_SgPl3|	|FIN:van#V+V+acc_Indef+Dec+Pres+nom_Pl3|	|Nom:meghatározó#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 4 4 Black Det
+ÉL KÉSZÜLT 4 1 Red Gen
+ÉL KÉSZÜLT 4 3 Black Adj
+ÉL KÉSZÜLT 4 2 Black Adj
+[ anal  = 'Nom:kapcsolat#N+N+Pl+Pers+pers_SgPl3'       ]
+[ main  = 'Nom'                                        ]
+[ other = frozenset({'pers_SgPl3', 'Pl', 'Pers', 'N'}) ]
+[ stem  = 'kapcsolat#N'                                ]
+[ tok   = 'kapcsolatai'                                ]
+
+5 FIN:van#V+V+acc_Indef+Dec+Pres+nom_Pl3|	|Nom:meghatározó#Adj+Adj+macro_NPMod+Sg|	|Nom:orosz#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 5 4 Blue Focus

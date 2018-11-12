@@ -1,0 +1,17 @@
+0 ||:NYITO|	|Ill:kórház#N+N+Sg|	|FIN:visz#V+V+acc_Def+Dec+Past+nom_Pl3+acc_SgPl3
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Ill:kórház#N+N+Sg|	|FIN:visz#V+V+acc_Def+Dec+Past+nom_Pl3+acc_SgPl3|	|Nom:Sonia#N+N+Sg+PropN
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Ill:kórház#N+N+Sg'    ]
+[ main  = 'Ill'                  ]
+[ other = frozenset({'N', 'Sg'}) ]
+[ stem  = 'kórház#N'             ]
+[ tok   = 'Kórházba'             ]
+
+2 FIN:visz#V+V+acc_Def+Dec+Past+nom_Pl3+acc_SgPl3|	|Nom:Sonia#N+N+Sg+PropN|	|Acc:Gandhi#N+N+Sg+PropN+PUNCT
+ÉL KÉSZÜLT 2 1 Blue Focus

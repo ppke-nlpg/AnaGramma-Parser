@@ -1,0 +1,13 @@
+token 0 # ||
+token 1 Teljes Nom
+token 2 a Det
+token 3 káosz Nom
+edge Det 3 2 Black
+edge Adj 3 1 Black
+token 4 a Det
+token 5 kötelező Nom
+token 6 biztosítások Nom
+edge Det 6 4 Black
+edge Adj 6 5 Black
+edge körül#PostP 7 6 Black
+token 7 körül. PostP

@@ -1,0 +1,25 @@
+token 0 # ||
+token 1 Szerintem PostP
+token 2 nemsokára MOD
+token 3 el PreV
+token 4 fogod FIN
+edge Focus 4 3 Blue
+edge MOD 4 2 Red
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (fogod, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:fog#V+V+acc_Def+Dec+Pres+nom_Sg2_Pron+acc_SgPl3'                   ]
+[ main  = 'FIN'                                                                   ]
+[ other = frozenset({'Dec', 'Pres', 'acc_Def', 'nom_Sg2_Pron', 'acc_SgPl3', 'V'}) ]
+[ stem  = 'fog#V'                                                                 ]
+[ tok   = 'fogod'                                                                 ],
+Is Unique: None))

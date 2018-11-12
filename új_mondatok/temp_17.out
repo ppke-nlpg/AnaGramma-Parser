@@ -1,0 +1,34 @@
+0 ||:NYITO|	|Nom:Péter#N+N+Sg+PropN|	|FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:Péter#N+N+Sg+PropN|	|FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3|	|Acc:Mari#N+N+Sg+PropN+PUNCT
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Nom:Péter#N+N+Sg+PropN'        ]
+[ main  = 'Nom'                           ]
+[ other = frozenset({'N', 'Sg', 'PropN'}) ]
+[ stem  = 'Péter#N'                       ]
+[ tok   = 'Péter'                         ]
+
+2 FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3|	|Acc:Mari#N+N+Sg+PropN+PUNCT|	|||:NYITO
+ÉL KÉSZÜLT 2 1 Blue Focus
+ÉL KÉSZÜLT 2 1 Red Nom
+ÉL KÉSZÜLT 0 2 Black Fin
+[ anal  = 'FIN:szeret#V+V+acc_Def+Dec+Pres+nom_Sg3+acc_SgPl3'                ]
+[ main  = 'FIN'                                                              ]
+[ other = frozenset({'acc_SgPl3', 'Dec', 'V', 'nom_Sg3', 'Pres', 'acc_Def'}) ]
+[ stem  = 'szeret#V'                                                         ]
+[ tok   = 'szereti'                                                          ]
+
+3 Acc:Mari#N+N+Sg+PropN+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 3 3 Black Det
+ÉL KÉSZÜLT 2 3 Red Acc
+[ anal  = 'Acc:Mari#N+N+Sg+PropN+PUNCT'            ]
+[ main  = 'Acc'                                    ]
+[ other = frozenset({'PUNCT', 'N', 'Sg', 'PropN'}) ]
+[ stem  = 'Mari#N'                                 ]
+[ tok   = 'Marit.'                                 ]
+

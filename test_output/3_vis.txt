@@ -1,0 +1,19 @@
+token 0 # ||
+token 1 Fenntarthatatlannak Dat
+token 2 nevezte FIN
+edge Focus 2 1 Blue
+edge Dat 2 1 Red
+edge Fin 0 2 Black
+token 3 a Det
+token 4 kormány Nom
+edge Det 4 3 Black
+token 5 rezsicsökkentési Nom
+token 6 programját Acc
+edge Det 6 6 Black
+edge Gen 6 4 Red
+edge Adj 6 5 Black
+edge Acc 2 6 Red
+token 7 az Det
+token 8 LMP. Nom
+edge Det 8 7 Black
+edge Nom 2 8 Red

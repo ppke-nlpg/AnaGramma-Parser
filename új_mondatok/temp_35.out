@@ -1,0 +1,48 @@
+0 ||:NYITO|	|Dat:Magyarország#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Dat:Magyarország#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Nom:Szerbia#N+N+Sg+PropN
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Dat:Magyarország#N+N+Sg+PropN' ]
+[ main  = 'Dat'                           ]
+[ other = frozenset({'Sg', 'N', 'PropN'}) ]
+[ stem  = 'Magyarország#N'                ]
+[ tok   = 'Magyarországnak'               ]
+
+2 Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Nom:Szerbia#N+N+Sg+PropN|	|Nom:uniós#Adj+Adj+macro_NPMod+Sg
+[ anal  = 'Nom:fontos#Adj+Adj+macro_NPMod+Sg'     ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Adj', 'macro_NPMod', 'Sg'}) ]
+[ stem  = 'fontos#Adj'                            ]
+[ tok   = 'fontos'                                ]
+
+3 Nom:Szerbia#N+N+Sg+PropN|	|Nom:uniós#Adj+Adj+macro_NPMod+Sg|	|Nom:tagjelöltség#N+N+Sg+Pers+pers_SgPl3+PUNCT
+ÉL KÉSZÜLT 3 2 Black Adj
+ÉL KÉSZÜLT 3 3 Black Det
+[ anal  = 'Nom:Szerbia#N+N+Sg+PropN'      ]
+[ main  = 'Nom'                           ]
+[ other = frozenset({'Sg', 'N', 'PropN'}) ]
+[ stem  = 'Szerbia#N'                     ]
+[ tok   = 'Szerbia'                       ]
+
+4 Nom:uniós#Adj+Adj+macro_NPMod+Sg|	|Nom:tagjelöltség#N+N+Sg+Pers+pers_SgPl3+PUNCT|	|||:NYITO
+[ anal  = 'Nom:uniós#Adj+Adj+macro_NPMod+Sg'      ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Adj', 'macro_NPMod', 'Sg'}) ]
+[ stem  = 'uniós#Adj'                             ]
+[ tok   = 'uniós'                                 ]
+
+5 Nom:tagjelöltség#N+N+Sg+Pers+pers_SgPl3+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 5 5 Black Det
+ÉL KÉSZÜLT 5 3 Red Gen
+ÉL KÉSZÜLT 5 4 Black Adj
+[ anal  = 'Nom:tagjelöltség#N+N+Sg+Pers+pers_SgPl3+PUNCT'       ]
+[ main  = 'Nom'                                                 ]
+[ other = frozenset({'Sg', 'N', 'Pers', 'PUNCT', 'pers_SgPl3'}) ]
+[ stem  = 'tagjelöltség#N'                                      ]
+[ tok   = 'tagjelöltsége.'                                      ]
+

@@ -1,0 +1,12 @@
+token 0 # ||
+token 1 Én Nom
+edge Det 1 1 Black
+token 2 elmentem FIN
+edge Focus 2 2 Blue
+edge PreV 2 2 Black
+edge Nom 2 1 Red
+edge Fin 0 2 Black
+token 3 a Det
+token 4 vásárba. Ill
+edge Det 4 3 Black
+edge Ill 2 4 Red

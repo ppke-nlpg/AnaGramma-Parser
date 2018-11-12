@@ -1,0 +1,8 @@
+token 0 # ||
+token 1 Szereti FIN
+edge Focus 1 1 Blue
+edge Fin 0 1 Black
+token 2 Marit. Acc
+edge Det 2 2 Black
+edge Acc 1 2 Red
+edge Nom 1 1 Black

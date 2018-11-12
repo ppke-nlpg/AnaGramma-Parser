@@ -1,0 +1,5 @@
+ÉL KÉSZÜLT 1 1 Blue Focus
+ÉL KÉSZÜLT 0 1 Black Fin
+ÉL KÉSZÜLT 2 2 Black Det
+ÉL KÉSZÜLT 1 2 Red Acc
+ÉL KÉSZÜLT 1 1 Black Nom

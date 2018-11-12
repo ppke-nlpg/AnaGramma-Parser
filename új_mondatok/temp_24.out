@@ -1,0 +1,25 @@
+0 ||:NYITO|	|Acc:én#N+N+Pron+Sg1_Pron|	|MOD:nem#Adv
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Acc:én#N+N+Pron+Sg1_Pron|	|MOD:nem#Adv|	|FIN:érdekel#V+V+acc_Indef+Dec+Pres+nom_Sg3
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Acc:én#N+N+Pron+Sg1_Pron'           ]
+[ main  = 'Acc'                                ]
+[ other = frozenset({'Sg1_Pron', 'N', 'Pron'}) ]
+[ stem  = 'én#N'                               ]
+[ tok   = 'Engem'                              ]
+
+2 MOD:nem#Adv|	|FIN:érdekel#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Det:a#Det+Def
+[ anal  = 'MOD:nem#Adv' ]
+[ main  = 'MOD'         ]
+[ other = frozenset()   ]
+[ stem  = 'nem#Adv'     ]
+[ tok   = 'nem'         ]
+
+3 FIN:érdekel#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Det:a#Det+Def|	|MOD:gyakran#Adv
+ÉL KÉSZÜLT 3 2 Blue Focus
+ÉL KÉSZÜLT 3 2 Red MOD

@@ -1,0 +1,8 @@
+0 ||:NYITO|	|Nom:el|veszik#PartPast+PreVV+PartPast+macro_NPMod|	|Det:a#Det+Def
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:el|veszik#PartPast+PreVV+PartPast+macro_NPMod|	|Det:a#Det+Def|	|Nom:türelem#N+N+Sg+Pers+pers_Sg2_Pron+PUNCT

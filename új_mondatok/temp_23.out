@@ -1,0 +1,8 @@
+0 ||:NYITO|	|Nom:el|veszik#PartPast+PreVV+PartPast+macro_NPMod|	|Dat:Marci#N+N+Sg+PropN
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:el|veszik#PartPast+PreVV+PartPast+macro_NPMod|	|Dat:Marci#N+N+Sg+PropN|	|Det:a#Det+Def

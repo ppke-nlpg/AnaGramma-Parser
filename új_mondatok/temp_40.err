@@ -1,0 +1,71 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Teljes Nom
+feature Nom other 1
+feature Adj other 1
+feature macro_NPMod other 1
+feature Sg other 1
+searcher NOM_OR_GEN * None ['>]'] 1
+searcher POSTP_SEARCH * 1 ['>]'] 1
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 1
+feature SgPl1_3 Sg 1
+feature NOM_OR_GEN ? 1
+token 2 a Det
+feature Det other 2
+feature Def other 2
+feature Det_Def Def 2
+token 3 káosz Nom
+feature Nom other 3
+feature N other 3
+feature Sg other 3
+searcher NOM_OR_GEN * None ['>]'] 3
+searcher POSTP_SEARCH * 1 ['>]'] 3
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+feature occupied {'Det'} 2
+edge Det 3 2 Black
+feature occupied {'macro_NPMod', 'Adj'} 1
+edge Adj 3 1 Black
+feature NOM_OR_GEN ? 3
+token 4 a Det
+feature Det other 4
+feature Def other 4
+feature Det_Def Def 4
+token 5 kötelező Nom
+feature Nom other 5
+feature Adj other 5
+feature macro_NPMod other 5
+feature Sg other 5
+searcher NOM_OR_GEN * None ['>]'] 5
+searcher POSTP_SEARCH * 1 ['>]'] 5
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 5
+feature SgPl1_3 Sg 5
+feature NOM_OR_GEN ? 5
+token 6 biztosítások Nom
+feature Nom other 6
+feature N other 6
+feature Pl other 6
+searcher NOM_OR_GEN * None ['>]'] 6
+searcher POSTP_SEARCH * 1 ['>]'] 6
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 6
+searcher Det Det None ['<'] 6
+searcher macro_NPMod * None ['<'] 6
+feature SgPl1_3 Pl 6
+feature occupied {'Det'} 4
+edge Det 6 4 Black
+feature occupied {'macro_NPMod', 'Adj'} 5
+edge Adj 6 5 Black
+feature occupied {'körül#PostP'} 6
+edge körül#PostP 7 6 Black
+feature NOM_OR_GEN ? 6
+token 7 körül. PostP
+feature PostP other 7
+feature PostP other 7
+feature PUNCT other 7
+feature || other 8
+feature NYITO other 8
+searcher FIN FIN None ['<', '>'] 8

@@ -1,0 +1,10 @@
+token 0 # ||
+token 1 Elmegyek FIN
+edge Focus 1 1 Blue
+edge PreV 1 1 Black
+edge Fin 0 1 Black
+token 2 a Det
+token 3 vásárba. Ill
+edge Det 3 2 Black
+edge Ill 1 3 Red
+edge Nom 1 1 Black

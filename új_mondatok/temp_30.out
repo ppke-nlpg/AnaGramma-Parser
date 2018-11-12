@@ -1,0 +1,33 @@
+0 ||:NYITO|	|Nom:Peti#N+N+Sg+PropN|	|Nom:elég#Num+Num+macro_NPMod+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:Peti#N+N+Sg+PropN|	|Nom:elég#Num+Num+macro_NPMod+Sg|	|Acc:csoki#N+N+Sg
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Nom:Peti#N+N+Sg+PropN'         ]
+[ main  = 'Nom'                           ]
+[ other = frozenset({'Sg', 'PropN', 'N'}) ]
+[ stem  = 'Peti#N'                        ]
+[ tok   = 'Peti'                          ]
+
+2 Nom:elég#Num+Num+macro_NPMod+Sg|	|Acc:csoki#N+N+Sg|	|FIN:eszik#V+V+acc_Indef+Dec+Past+nom_Sg3+PUNCT
+[ anal  = 'Nom:elég#Num+Num+macro_NPMod+Sg'       ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Sg', 'macro_NPMod', 'Num'}) ]
+[ stem  = 'elég#Num'                              ]
+[ tok   = 'elég'                                  ]
+
+3 Acc:csoki#N+N+Sg|	|FIN:eszik#V+V+acc_Indef+Dec+Past+nom_Sg3+PUNCT|	|||:NYITO
+ÉL KÉSZÜLT 3 3 Black Det
+ÉL KÉSZÜLT 3 2 Black Num
+[ anal  = 'Acc:csoki#N+N+Sg'     ]
+[ main  = 'Acc'                  ]
+[ other = frozenset({'Sg', 'N'}) ]
+[ stem  = 'csoki#N'              ]
+[ tok   = 'csokit'               ]
+
+4 FIN:eszik#V+V+acc_Indef+Dec+Past+nom_Sg3+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 4 3 Blue Focus

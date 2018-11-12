@@ -1,0 +1,25 @@
+0 ||:NYITO|	|MOD:itt#Adv+Pron|	|MOD:most#Adv
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 MOD:itt#Adv+Pron|	|MOD:most#Adv|	|FIN:el|kezdődik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3
+[ anal  = 'MOD:itt#Adv+Pron'  ]
+[ main  = 'MOD'               ]
+[ other = frozenset({'Pron'}) ]
+[ stem  = 'itt#Adv'           ]
+[ tok   = 'Itt'               ]
+
+2 MOD:most#Adv|	|FIN:el|kezdődik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3|	|Nom:valami#N+N+Pron+Sg+PUNCT
+[ anal  = 'MOD:most#Adv' ]
+[ main  = 'MOD'          ]
+[ other = frozenset()    ]
+[ stem  = 'most#Adv'     ]
+[ tok   = 'most'         ]
+
+3 FIN:el|kezdődik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3|	|Nom:valami#N+N+Pron+Sg+PUNCT|	|||:NYITO
+ÉL KÉSZÜLT 3 2 Red MOD
+ÉL KÉSZÜLT 3 1 Red MOD
+ÉL KÉSZÜLT 3 3 Blue Focus

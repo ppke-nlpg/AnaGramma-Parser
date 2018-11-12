@@ -1,0 +1,11 @@
+token 0 # ||
+token 1 A Det
+token 2 kutyád Nom
+edge Det 2 1 Black
+token 3 hangosan Essmod
+token 4 ugat. FIN
+edge Focus 4 3 Blue
+edge MOD 4 3 Red
+edge Nom 4 2 Red
+edge Fin 0 4 Black
+edge Gen 2 2 Black

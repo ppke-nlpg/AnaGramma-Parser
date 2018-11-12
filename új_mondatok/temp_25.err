@@ -1,0 +1,83 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 A Det
+feature Det other 1
+feature Def other 1
+feature Det_Def Def 1
+token 2 macskám Nom
+feature Nom other 2
+feature N other 2
+feature Sg other 2
+feature Pers other 2
+feature pers_Sg1_Pron other 2
+searcher NOM_OR_GEN * None ['>]'] 2
+searcher POSTP_SEARCH * 1 ['>]'] 2
+searcher PUNCT_OR_FIN_SEARCH {'PUNCT', 'FIN'} None ['>]'] 2
+searcher Det Det None ['<'] 2
+searcher macro_NPMod * None ['<'] 2
+feature SgPl1_3 Sg 2
+searcher Pers Nom None ['<'] 2
+feature occupied {'Det'} 1
+edge Det 2 1 Black
+searcher Pers Dat None ['<'] 2
+searcher Pers Dat None ['>]', '>'] 2
+feature NOM_OR_GEN ? 2
+token 3 eddig Ter
+feature Ter other 3
+feature N other 3
+feature Pron other 3
+feature Sg other 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+feature Det_Def Indef 3
+feature occupied {'Det'} 3
+edge Det 3 3 Black
+token 4 képtelen Nom
+feature Nom other 4
+feature Adj other 4
+feature macro_NPMod other 4
+feature Sg other 4
+searcher NOM_OR_GEN * None ['>]'] 4
+searcher POSTP_SEARCH * 1 ['>]'] 4
+searcher PUNCT_OR_FIN_SEARCH {'PUNCT', 'FIN'} None ['>]'] 4
+feature SgPl1_3 Sg 4
+feature NOM_OR_GEN Nom 4
+feature NOM_OR_GEN ? 4
+token 5 volt FIN
+feature FIN other 5
+feature V other 5
+feature acc_Indef other 5
+feature Dec other 5
+feature Past other 5
+feature nom_Sg3 other 5
+searcher Focus * 1 ['<'] 5
+searcher MOD {'MOD', 'Essmod'} None ['<', '>'] 5
+searcher Acc Acc None None 5
+searcher VFRAME None None None 5
+searcher Nom Nom None None 5
+searcher VFRAME None None None 5
+searcher Nom Nom None None 5
+searcher VFRAME None None None 5
+feature occupied {'Focus'} 4
+edge Focus 5 4 Blue
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (volt, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3'                ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'Past', 'nom_Sg3', 'V', 'Dec', 'acc_Indef'}) ]
+[ stem  = 'van#V'                                                 ]
+[ tok   = 'volt'                                                  ],
+Is Unique: None))

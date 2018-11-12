@@ -1,0 +1,14 @@
+token 0 # ||
+token 1 Az Det
+token 2 eljárások Nom
+edge Det 2 1 Black
+token 3 lezárása Nom
+edge Det 3 3 Black
+edge Gen 3 2 Red
+token 4 nem MOD
+token 5 előfeltétele Nom
+edge Det 5 5 Black
+edge Gen 5 3 Red
+token 6 a Det
+token 7 hiteltárgyalásnak. Dat
+edge Det 7 6 Black

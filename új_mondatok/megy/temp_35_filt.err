@@ -1,0 +1,12 @@
+token 0 # ||
+token 1 Magyarországnak Dat
+edge Det 1 1 Black
+token 2 fontos Nom
+token 3 Szerbia Nom
+edge Adj 3 2 Black
+edge Det 3 3 Black
+token 4 uniós Nom
+token 5 tagjelöltsége. Nom
+edge Det 5 5 Black
+edge Gen 5 3 Red
+edge Adj 5 4 Black

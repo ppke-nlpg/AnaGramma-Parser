@@ -1,0 +1,39 @@
+0 ||:NYITO|	|Det:a#Det+Def|	|Nom:macska#N+N+Sg+Pers+pers_Sg1_Pron
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Det:a#Det+Def|	|Nom:macska#N+N+Sg+Pers+pers_Sg1_Pron|	|Ter:ez#N+N+Pron+Sg
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'A'                ]
+
+2 Nom:macska#N+N+Sg+Pers+pers_Sg1_Pron|	|Ter:ez#N+N+Pron+Sg|	|Nom:képtelen#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 2 1 Black Det
+[ anal  = 'Nom:macska#N+N+Sg+Pers+pers_Sg1_Pron'          ]
+[ main  = 'Nom'                                           ]
+[ other = frozenset({'Pers', 'N', 'Sg', 'pers_Sg1_Pron'}) ]
+[ stem  = 'macska#N'                                      ]
+[ tok   = 'macskám'                                       ]
+
+3 Ter:ez#N+N+Pron+Sg|	|Nom:képtelen#Adj+Adj+macro_NPMod+Sg|	|FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3
+ÉL KÉSZÜLT 3 3 Black Det
+[ anal  = 'Ter:ez#N+N+Pron+Sg'           ]
+[ main  = 'Ter'                          ]
+[ other = frozenset({'N', 'Pron', 'Sg'}) ]
+[ stem  = 'ez#N'                         ]
+[ tok   = 'eddig'                        ]
+
+4 Nom:képtelen#Adj+Adj+macro_NPMod+Sg|	|FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3|	|Inf:fel|mászik#V+PreVV+V
+[ anal  = 'Nom:képtelen#Adj+Adj+macro_NPMod+Sg'   ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Sg', 'Adj'}) ]
+[ stem  = 'képtelen#Adj'                          ]
+[ tok   = 'képtelen'                              ]
+
+5 FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3|	|Inf:fel|mászik#V+PreVV+V|	|Det:a#Det+Def
+ÉL KÉSZÜLT 5 4 Blue Focus

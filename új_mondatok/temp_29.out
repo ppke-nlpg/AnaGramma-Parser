@@ -1,0 +1,43 @@
+0 ||:NYITO|	|Nom:napszámos#Adj+Adj+macro_NPMod+Sg|	|Dat:óra#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:napszámos#Adj+Adj+macro_NPMod+Sg|	|Dat:óra#N+N+Sg|	|Nom:nevez#PartPast+PartPast+macro_NPMod
+[ anal  = 'Nom:napszámos#Adj+Adj+macro_NPMod+Sg'  ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Sg', 'macro_NPMod', 'Adj'}) ]
+[ stem  = 'napszámos#Adj'                         ]
+[ tok   = 'Napszámos'                             ]
+
+2 Dat:óra#N+N+Sg|	|Nom:nevez#PartPast+PartPast+macro_NPMod|	|Acc:szobor#N+N+Sg
+ÉL KÉSZÜLT 2 2 Black Det
+ÉL KÉSZÜLT 2 1 Black Adj
+[ anal  = 'Dat:óra#N+N+Sg'       ]
+[ main  = 'Dat'                  ]
+[ other = frozenset({'Sg', 'N'}) ]
+[ stem  = 'óra#N'                ]
+[ tok   = 'órának'               ]
+
+3 Nom:nevez#PartPast+PartPast+macro_NPMod|	|Acc:szobor#N+N+Sg|	|FIN:állít#V+V+acc_Indef+Dec+Pres+nom_Pl3
+ÉL KÉSZÜLT 3 3 Black Acc
+ÉL KÉSZÜLT 3 2 Red Dat
+[ anal  = 'Nom:nevez#PartPast+PartPast+macro_NPMod' ]
+[ main  = 'Nom'                                     ]
+[ other = frozenset({'PartPast', 'macro_NPMod'})    ]
+[ stem  = 'nevez#PartPast'                          ]
+[ tok   = 'nevezett'                                ]
+
+4 Acc:szobor#N+N+Sg|	|FIN:állít#V+V+acc_Indef+Dec+Pres+nom_Pl3|	|MOD:vasárnap#Adv
+ÉL KÉSZÜLT 4 4 Black Det
+ÉL KÉSZÜLT 4 3 Black PartPast
+[ anal  = 'Acc:szobor#N+N+Sg'    ]
+[ main  = 'Acc'                  ]
+[ other = frozenset({'Sg', 'N'}) ]
+[ stem  = 'szobor#N'             ]
+[ tok   = 'szobrot'              ]
+
+5 FIN:állít#V+V+acc_Indef+Dec+Pres+nom_Pl3|	|MOD:vasárnap#Adv|	|Nom:Rimóc#N+N+Sg+PropN
+ÉL KÉSZÜLT 5 4 Blue Focus

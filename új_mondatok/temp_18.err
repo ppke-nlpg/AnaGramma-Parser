@@ -1,0 +1,69 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Szereti FIN
+feature FIN other 1
+feature V other 1
+feature acc_Def other 1
+feature Dec other 1
+feature Pres other 1
+feature nom_Sg3 other 1
+feature acc_SgPl3 other 1
+searcher Focus * 1 ['<'] 1
+searcher MOD {'MOD', 'Essmod'} None ['<', '>'] 1
+searcher VFRAME Inf None ['<'] 1
+searcher Acc Acc None None 1
+searcher VFRAME None None None 1
+searcher Nom Nom None None 1
+searcher VFRAME None None None 1
+searcher Acc Acc None None 1
+searcher VFRAME None None None 1
+searcher VFRAME Inf None ['<'] 1
+searcher Acc Acc None None 1
+searcher VFRAME None None None 1
+searcher Acc Acc None None 1
+searcher Acc Acc None None 1
+searcher Nom Nom None None 1
+searcher VFRAME Inf None ['<'] 1
+feature occupied {'Focus'} 1
+edge Focus 1 1 Blue
+searcher VFRAME Inf None ['>]'] 1
+searcher VFRAME PreV None ['<'] 1
+searcher Nom Nom None ['<', '>'] 1
+searcher Acc Acc None ['<', '>'] 1
+searcher Acc Acc None ['<', '>'] 1
+searcher Nom Nom None ['<', '>'] 1
+feature occupied {'Fin'} 1
+edge Fin 0 1 Black
+token 2 Marit Acc
+feature Acc other 2
+feature Adj other 2
+feature macro_NPMod other 2
+feature Sg other 2
+feature SgPl1_3 Sg 2
+feature occupied {'Acc'} 2
+edge Acc 1 2 Red
+token 3 Péter. Nom
+feature Nom other 3
+feature N other 3
+feature Sg other 3
+feature PropN other 3
+feature PUNCT other 3
+searcher NOM_OR_GEN * None ['>]'] 3
+searcher POSTP_SEARCH * 1 ['>]'] 3
+searcher PUNCT_OR_FIN_SEARCH {'PUNCT', 'FIN'} None ['>]'] 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+searcher Det Det None None 3
+searcher Det Det None ['<'] 3
+feature Det_Def Def 3
+feature occupied {'Det'} 3
+edge Det 3 3 Black
+feature NOM_OR_GEN ? 3
+feature occupied {'Nom'} 3
+edge Nom 1 3 Red
+feature || other 4
+feature NYITO other 4
+searcher FIN FIN None ['<', '>'] 4

@@ -1,0 +1,56 @@
+0 ||:NYITO|	|Det:a#Det+Def|	|Nom:lap#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Det:a#Det+Def|	|Nom:lap#N+N+Sg|	|Nom:értesülés#N+N+Pl+Pers+pers_SgPl3
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'A'                ]
+
+2 Nom:lap#N+N+Sg|	|Nom:értesülés#N+N+Pl+Pers+pers_SgPl3|	|PostP:szerint#PostP+PostP
+ÉL KÉSZÜLT 2 1 Black Det
+[ anal  = 'Nom:lap#N+N+Sg'       ]
+[ main  = 'Nom'                  ]
+[ other = frozenset({'Sg', 'N'}) ]
+[ stem  = 'lap#N'                ]
+[ tok   = 'lap'                  ]
+
+3 Nom:értesülés#N+N+Pl+Pers+pers_SgPl3|	|PostP:szerint#PostP+PostP|	|Det:a#Det+Def
+ÉL KÉSZÜLT 3 3 Black Det
+ÉL KÉSZÜLT 3 2 Red Gen
+ÉL KÉSZÜLT 4 3 Black szerint#PostP
+[ anal  = 'Nom:értesülés#N+N+Pl+Pers+pers_SgPl3'       ]
+[ main  = 'PostP'                                      ]
+[ other = frozenset({'Pl', 'N', 'Pers', 'pers_SgPl3'}) ]
+[ stem  = 'értesülés#N'                                ]
+[ tok   = 'értesülései'                                ]
+
+4 PostP:szerint#PostP+PostP|	|Det:a#Det+Def|	|Sup:városhatár#N+N+Sg
+[ anal  = 'PostP:szerint#PostP+PostP' ]
+[ main  = 'PostP'                     ]
+[ other = frozenset({'PostP'})        ]
+[ stem  = 'szerint#PostP'             ]
+[ tok   = 'szerint'                   ]
+
+5 Det:a#Det+Def|	|Sup:városhatár#N+N+Sg|	|Nom:át|lép#PartPres+PreVV+PartPres+macro_NPMod
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+6 Sup:városhatár#N+N+Sg|	|Nom:át|lép#PartPres+PreVV+PartPres+macro_NPMod|	|Acc:HÉV-pálya#N+N+Pl+PropN
+ÉL KÉSZÜLT 6 5 Black Det
+[ anal  = 'Sup:városhatár#N+N+Sg' ]
+[ main  = 'Sup'                   ]
+[ other = frozenset({'Sg', 'N'})  ]
+[ stem  = 'városhatár#N'          ]
+[ tok   = 'városhatáron'          ]
+
+7 Nom:át|lép#PartPres+PreVV+PartPres+macro_NPMod|	|Acc:HÉV-pálya#N+N+Pl+PropN|	|Det:a#Det+Def
+ÉL KÉSZÜLT 7 7 Black PreV

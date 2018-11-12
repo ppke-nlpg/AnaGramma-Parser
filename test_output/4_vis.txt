@@ -1,0 +1,20 @@
+token 0 # ||
+token 1 A Det
+token 2 magyar Nom
+token 3 érdemrend Nom
+edge Det 3 1 Black
+edge Adj 3 2 Black
+token 4 középkeresztjét Acc
+edge Det 4 4 Black
+edge Gen 4 3 Red
+token 5 kapta FIN
+edge Focus 5 4 Blue
+edge PreV 5 6 Black
+edge Acc 5 4 Red
+edge Fin 0 5 Black
+token 6 meg PreV
+token 7 tegnap MOD
+edge MOD 5 7 Red
+token 8 Polgár_Judit. Nom
+edge Det 8 8 Black
+edge Nom 5 8 Red

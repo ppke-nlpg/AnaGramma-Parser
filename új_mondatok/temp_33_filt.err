@@ -1,0 +1,21 @@
+token 0 # ||
+token 1 Nincs FIN
+edge Focus 1 1 Blue
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (Nincs, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:nincs#V+V+acc_Indef+Dec+Pres+nom_Sg3'              ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'Dec', 'nom_Sg3', 'Pres', 'acc_Indef', 'V'}) ]
+[ stem  = 'nincs#V'                                               ]
+[ tok   = 'Nincs'                                                 ],
+Is Unique: None))

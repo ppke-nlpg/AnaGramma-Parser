@@ -1,0 +1,72 @@
+token 0 # ||
+token 1 A Det
+token 2 kormányzati Nom
+token 3 rezsicsökkentéshez All
+edge Det 3 1 Black
+edge Adj 3 2 Black
+token 4 kapcsolódó Nom
+edge All 4 3 Red
+token 5 újabb Nom
+token 6 törvényjavaslat Nom
+edge Det 6 6 Black
+edge Adj 6 5 Black
+edge PartPres 6 4 Black
+token 7 tárgyalásával Ins
+edge Det 7 7 Black
+edge Gen 7 6 Red
+token 8 foglalkozhat FIN
+edge Focus 8 7 Blue
+edge Ins 8 7 Red
+edge Fin 0 8 Black
+token 9 az Det
+token 10 Országgyűlés Nom
+edge Det 10 9 Black
+edge Nom 8 10 Red
+token 11 a Det
+token 12 következő Nom
+token 13 ülésen. Sup
+edge Det 13 11 Black
+edge PartPres 13 12 Black
+edge Sup 8 13 Red
+token 14 A Det
+token 15 parlament Nom
+edge Det 15 14 Black
+token 16 tegnap MOD
+token 17 két Nom
+token 18 jogszabályt Acc
+edge Det 18 18 Black
+edge Num 18 17 Black
+token 19 hozott FIN
+edge Focus 19 18 Blue
+edge MOD 19 16 Red
+edge Acc 19 18 Red
+edge Nom 19 15 Red
+token 20 a Det
+token 21 fogyasztói Nom
+token 22 gázár Nom
+edge Det 22 20 Black
+edge Adj 22 21 Black
+token 23 mérséklésének Dat
+edge Det 23 23 Black
+edge Gen 23 22 Red
+token 24 érvényesítésére. Sub
+edge Det 24 24 Black
+edge Gen 24 23 Red
+edge Sub 19 24 Red
+token 25 A Det
+token 26 képviselők Nom
+edge Det 26 25 Black
+token 27 ezúttal MOD
+token 28 a Det
+token 29 vízdíjak Nom
+edge Det 29 28 Black
+token 30 csökkentéséről Del
+edge Det 30 30 Black
+edge Gen 30 29 Red
+token 31 kezdhetnek FIN
+edge Focus 31 30 Blue
+edge MOD 31 27 Red
+edge Nom 31 26 Red
+token 32 tárgyalni. Inf
+edge Del 32 30 Red
+edge Inf 31 32 Black

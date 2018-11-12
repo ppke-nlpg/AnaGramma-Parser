@@ -1,0 +1,77 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Péter Nom
+feature Nom other 1
+feature N other 1
+feature Sg other 1
+feature PropN other 1
+searcher NOM_OR_GEN * None ['>]'] 1
+searcher POSTP_SEARCH * 1 ['>]'] 1
+searcher PUNCT_OR_FIN_SEARCH {'PUNCT', 'FIN'} None ['>]'] 1
+searcher Det Det None ['<'] 1
+searcher macro_NPMod * None ['<'] 1
+feature SgPl1_3 Sg 1
+searcher Det Det None None 1
+searcher Det Det None ['<'] 1
+feature Det_Def Def 1
+feature occupied {'Det'} 1
+edge Det 1 1 Black
+feature NOM_OR_GEN Nom 1
+feature NOM_OR_GEN ? 1
+token 2 szereti FIN
+feature FIN other 2
+feature V other 2
+feature acc_Def other 2
+feature Dec other 2
+feature Pres other 2
+feature nom_Sg3 other 2
+feature acc_SgPl3 other 2
+searcher Focus * 1 ['<'] 2
+searcher MOD {'Essmod', 'MOD'} None ['<', '>'] 2
+searcher VFRAME Inf None ['<'] 2
+searcher Acc Acc None None 2
+searcher VFRAME None None None 2
+searcher Nom Nom None None 2
+searcher VFRAME None None None 2
+searcher Acc Acc None None 2
+searcher VFRAME None None None 2
+searcher VFRAME Inf None ['<'] 2
+searcher Acc Acc None None 2
+searcher VFRAME None None None 2
+searcher Acc Acc None None 2
+searcher Acc Acc None None 2
+searcher Nom Nom None None 2
+searcher VFRAME Inf None ['<'] 2
+feature occupied {'Focus'} 1
+edge Focus 2 1 Blue
+searcher VFRAME Inf None ['>]'] 2
+searcher VFRAME PreV None ['<'] 2
+searcher Nom Nom None ['<', '>'] 2
+searcher Acc Acc None ['<', '>'] 2
+searcher Acc Acc None ['<', '>'] 2
+searcher Nom Nom None ['<', '>'] 2
+feature occupied {'Nom'} 1
+edge Nom 2 1 Red
+feature occupied {'Fin'} 2
+edge Fin 0 2 Black
+token 3 Marit. Acc
+feature Acc other 3
+feature N other 3
+feature Sg other 3
+feature PropN other 3
+feature PUNCT other 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+searcher Det Det None None 3
+searcher Det Det None ['<'] 3
+feature Det_Def Def 3
+feature occupied {'Det'} 3
+edge Det 3 3 Black
+feature occupied {'Acc'} 3
+edge Acc 2 3 Red
+feature || other 4
+feature NYITO other 4
+searcher FIN FIN None ['<', '>'] 4

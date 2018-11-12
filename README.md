@@ -3,39 +3,45 @@ AnaGramma-Parser
 
 Egy pszicholingvisztikai indíttatású elemző modell
 
-Részben vagy egészben történő felhasználás esetén az alábbi cikket 
+Részben vagy egészben történő felhasználás esetén az alábbi cikket
 kell meghivatkozni:
 Prószéky Gábor, Indig Balázs, Miháltz Márton, Sass Bálint:
 "Egy pszicholingvisztikai indíttatású számítógépes nyelvfeldolgozási modell felé"
 X. Magyar Számítógépes Nyelvészeti Konferencia MSzNy. 2014. január 16-17 (2014).
 
-Függőségek: 
-- python 2.7 (*Nix alapú rendszeren, preferáltan linux) 
+### Függőségek:
+
+- Python 3.5 (*Nix alapú rendszeren, preferáltan Linux)
 - NLTK 3.0
+- [PurePOSPy](https://github.com/ppke-nlpg/purepospy) (a megfelelő verzió szükséges)
+- Humor morfológiai elemző REST API-n keresztüli eléréssel hasonlóan az [emMorpPy](https://github.com/ppke-nlpg/emmorphpy)-hez.
 
-Használata:
+### Használata:
 
-1.	A szerverek elindítása:
-		cd pos_model
-		python prob_model.py szeged_POS_model --server 50000 &
-		python morph_guesser.py --server 60000 &
-		cd ..
+1. Két helyen a kódban meg kell adni a megfelelő elérésiutakat a PurePOS és a Humor REST API-hoz (ling_rules/morphology_converter/morphologyConverter.py:231 és engine/windowedMorphology.py:102)
+2. ./test.sh futtatásával a példamondatokon lefut a teszt a forráskódban definiált mondatokon.
 
-1.	A fő program futtatása, miután a szerverek készen állnak:
-		python pilot.py input/inforadio_elso10.tokenized.txt
-	*FIGYELEM! A FUTÁSI IDŐ HOSSZÚ LEHET!*
 
-1.	A szerverek leállítása:
-		killall -9 python
+### Nyelvi szabályok:
 
-Minták az input és output mappában találhatók.
-A futásidőkről a kimenet fájlok végén lehet tájékozódni.
+A rendszer négy egymással konzisztens lépésre épül:
 
-A szeged_*_model* fájlok a Szeged korpusz[1] felhasználásával készültek.
+1. A töbtagúnév esetek feldolgozása a szófaji egyértelműsítés után: ling_rules/mosaic.py
+2. Morfológia: Humor kód -> Elemző jellemzők konvertálása: ling_rules/morphology_converter/morphologyConverter.py
+3. Minták feldolgozása: Az egyes tokenek jellemzői definiálják a teendőiket (pl. __dinamikus jellemzők__, __keresletek__), amiket egy külön lépésben végrehajt a program: ling_rules/patternsAndActions.py
+4. A definiált __keresők__ implementációi: A program futása során ezek a programrészletek futna le a __keresők__ működése közben: ling_rules/mainActions.py
+5. (+1) Az igekötők és vonzatkeretek szótára külön fájlban kapott helyet: ling_rules/verbDictionary.py
 
-[1] Csendes, Dóra, et al. 
-"Kézzel annotált magyar nyelvi korpusz: a Szeged Korpusz."
-II. Magyar Számıtógépes Nyelvészeti Konferencia (2003): 238-245.
+
+### Kapcsolódó modulok:
+
+- [Manócska](https://github.com/ppke-nlpg/manocska): Integrált igei vonzatkerettár, mely az elemző vonzatkeret-szótáraként használható
+- [VFrame](https://github.com/ppke-nlpg/vframe): Az igék vonztatkeret-lehetőségeinek leszűkítésére használt eljárás, beépítésre került az elemzőbe
+- [Nom-or-What](https://github.com/ppke-nlpg/nom-or-what): A morfológiai "nominatívusz" egyértelműsítésére szolgáló eljárás, beépítésre került az elemzőbe
+- [Whats wrong, Python?](https://github.com/ppke-nlpg/whats-wrong-python): Nyelvtechnológiai programok kimenetének és a kimenetek különbségeinek vizualizációjára is használható könyvtár (béta állapotú), felhasználható mint az elemző vizuális kimenete
+- [EmMorphPy](https://github.com/ppke-nlpg/emmorphpy): A Humor morfológiai elemzőhöz is használt REST API azóta továbbfejlesztett változata, az elemzőben a Humor REST API-ját szolgáltatja
+- [PurePOS](https://github.com/ppke-nlpg/purepos): Szófaji egyértelműsítő, az elemzőben ideiglenesen került felhasználásra
+- [PurePOSPy](https://github.com/ppke-nlpg/purepospy): Python wrapper és REST API a PurePOS-hoz, az elemzőben ideiglenesen került felhasználásra
 
 
 Technikai kérdésekkel kapcsolatban Indig Balázst (indig.balazs@itk) lehet keresni.

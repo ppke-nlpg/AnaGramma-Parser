@@ -1,0 +1,51 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Egyedül MOD
+feature MOD other 1
+token 2 a Det
+feature Det other 2
+feature Def other 2
+feature Det_Def Def 2
+token 3 Chelsea-t Acc
+feature Acc other 3
+feature N other 3
+feature Sg other 3
+feature PropN other 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Sg 3
+searcher Det Det None None 3
+searcher Det Det None ['<'] 3
+feature occupied {'Det'} 2
+edge Det 3 2 Black
+token 4 verő Nom
+feature Nom other 4
+feature PartPres other 4
+feature macro_NPMod other 4
+searcher NOM_OR_GEN * None ['>]'] 4
+searcher POSTP_SEARCH * 1 ['>]'] 4
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 4
+searcher Nom Nom 0 ['<'] 4
+searcher VFRAME None None None 4
+searcher VFRAME None None None 4
+searcher VFRAME None None None 4
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (verő, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'Nom:ver#PartPres+PartPres+macro_NPMod' ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'PartPres', 'macro_NPMod'})  ]
+[ stem  = 'ver#PartPres'                          ]
+[ tok   = 'verő'                                  ],
+Is Unique: None))

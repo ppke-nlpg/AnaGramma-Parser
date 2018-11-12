@@ -1,0 +1,41 @@
+token 0 # ||
+token 1 A Det
+token 2 szegényekért Cau
+edge Det 2 1 Black
+token 3 fellépő Nom
+edge PreV 3 3 Black
+edge Cau 3 2 Red
+token 4 egyházat Acc
+edge Det 4 4 Black
+edge PartPres 4 3 Black
+token 5 szeretne FIN
+edge Focus 5 4 Blue
+edge Acc 5 4 Red
+edge Fin 0 5 Black
+token 6 az Det
+token 7 új Nom
+token 8 pápa. Nom
+edge Det 8 6 Black
+edge Adj 8 7 Black
+edge Nom 5 8 Red
+token 9 Ferenc_pápa Nom
+edge Det 9 9 Black
+token 10 erről Del
+edge Det 10 10 Black
+token 11 a Det
+token 12 sajtó Nom
+edge Det 12 11 Black
+token 13 munkatársainak Dat
+edge Det 13 13 Black
+edge Gen 13 12 Red
+token 14 tartott Nom
+edge Acc 14 14 Black
+edge Dat 14 13 Red
+token 15 audiencián Sup
+edge Det 15 15 Black
+edge PartPast 15 14 Black
+token 16 beszélt. FIN
+edge Focus 16 15 Blue
+edge Del 16 10 Red
+edge Sup 16 15 Red
+edge Nom 16 9 Red

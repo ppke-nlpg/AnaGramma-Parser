@@ -1,0 +1,24 @@
+0 ||:NYITO|	|Dat:Magyarország#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Dat:Magyarország#N+N+Sg+PropN|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Dat:Magyarország#N+N+Sg+PropN' ]
+[ main  = 'Dat'                           ]
+[ other = frozenset({'N', 'PropN', 'Sg'}) ]
+[ stem  = 'Magyarország#N'                ]
+[ tok   = 'Magyarországnak'               ]
+
+2 Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3|	|Nom:Szerbia#N+N+Sg+PropN
+[ anal  = 'Nom:fontos#Adj+Adj+macro_NPMod+Sg'     ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Sg', 'Adj', 'macro_NPMod'}) ]
+[ stem  = 'fontos#Adj'                            ]
+[ tok   = 'fontos'                                ]
+
+3 FIN:van#V+V+acc_Indef+Dec+Past+nom_Sg3|	|Nom:Szerbia#N+N+Sg+PropN|	|Nom:uniós#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 3 2 Blue Focus

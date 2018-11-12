@@ -1,0 +1,11 @@
+ÉL KÉSZÜLT 3 1 Black Det
+ÉL KÉSZÜLT 3 2 Black Adj
+ÉL KÉSZÜLT 4 4 Black Det
+ÉL KÉSZÜLT 4 3 Red Gen
+ÉL KÉSZÜLT 5 4 Blue Focus
+ÉL KÉSZÜLT 5 6 Black PreV
+ÉL KÉSZÜLT 5 4 Red Acc
+ÉL KÉSZÜLT 0 5 Black Fin
+ÉL KÉSZÜLT 5 7 Red MOD
+ÉL KÉSZÜLT 8 8 Black Det
+ÉL KÉSZÜLT 5 8 Red Nom

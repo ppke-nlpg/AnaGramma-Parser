@@ -1,0 +1,65 @@
+0 ||:NYITO|	|Nom:két#Num+Num+macro_NPMod+Sg|	|Acc:konstrukció#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:két#Num+Num+macro_NPMod+Sg|	|Acc:konstrukció#N+N+Sg|	|FIN:ajánl#V+V+acc_Indef+Dec+Pres+nom_Sg3
+[ anal  = 'Nom:két#Num+Num+macro_NPMod+Sg'        ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Sg', 'macro_NPMod', 'Num'}) ]
+[ stem  = 'két#Num'                               ]
+[ tok   = 'Két'                                   ]
+
+2 Acc:konstrukció#N+N+Sg|	|FIN:ajánl#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Det:a#Det+Def
+ÉL KÉSZÜLT 2 2 Black Det
+ÉL KÉSZÜLT 2 1 Black Num
+[ anal  = 'Acc:konstrukció#N+N+Sg' ]
+[ main  = 'Acc'                    ]
+[ other = frozenset({'Sg', 'N'})   ]
+[ stem  = 'konstrukció#N'          ]
+[ tok   = 'konstrukciót'           ]
+
+3 FIN:ajánl#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Det:a#Det+Def|	|Dat:devizahiteles#N+N+Pl
+ÉL KÉSZÜLT 3 2 Blue Focus
+ÉL KÉSZÜLT 3 2 Red Acc
+ÉL KÉSZÜLT 0 3 Black Fin
+[ anal  = 'FIN:ajánl#V+V+acc_Indef+Dec+Pres+nom_Sg3'              ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'V', 'Dec', 'Pres', 'nom_Sg3', 'acc_Indef'}) ]
+[ stem  = 'ajánl#V'                                               ]
+[ tok   = 'ajánl'                                                 ]
+
+4 Det:a#Det+Def|	|Dat:devizahiteles#N+N+Pl|	|Det:a#Det+Def
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+5 Dat:devizahiteles#N+N+Pl|	|Det:a#Det+Def|	|Nom:bankszövetség#N+N+Sg+PUNCT
+ÉL KÉSZÜLT 5 4 Black Det
+ÉL KÉSZÜLT 3 5 Red Dat
+[ anal  = 'Dat:devizahiteles#N+N+Pl' ]
+[ main  = 'Dat'                      ]
+[ other = frozenset({'Pl', 'N'})     ]
+[ stem  = 'devizahiteles#N'          ]
+[ tok   = 'devizahiteleseknek'       ]
+
+6 Det:a#Det+Def|	|Nom:bankszövetség#N+N+Sg+PUNCT|	|||:NYITO
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+7 Nom:bankszövetség#N+N+Sg+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 7 6 Black Det
+ÉL KÉSZÜLT 3 7 Red Nom
+[ anal  = 'Nom:bankszövetség#N+N+Sg+PUNCT' ]
+[ main  = 'Nom'                            ]
+[ other = frozenset({'Sg', 'N', 'PUNCT'})  ]
+[ stem  = 'bankszövetség#N'                ]
+[ tok   = 'Bankszövetség.'                 ]
+

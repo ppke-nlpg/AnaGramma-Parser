@@ -1,0 +1,6 @@
+token 0 # ||
+token 1 Utállak. FIN
+edge Focus 1 1 Blue
+edge Fin 0 1 Black
+edge Acc 1 1 Black
+edge Nom 1 1 Black

@@ -1,0 +1,9 @@
+0 ||:NYITO|	|FIN:lakik#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Nom:orvos#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 FIN:lakik#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Nom:orvos#N+N+Sg|	|Det:a#Det+Def
+ÉL KÉSZÜLT 1 1 Blue Focus

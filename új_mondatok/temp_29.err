@@ -1,0 +1,96 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Napszámos Nom
+feature Nom other 1
+feature Adj other 1
+feature macro_NPMod other 1
+feature Sg other 1
+searcher NOM_OR_GEN * None ['>]'] 1
+searcher POSTP_SEARCH * 1 ['>]'] 1
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 1
+feature SgPl1_3 Sg 1
+feature NOM_OR_GEN ? 1
+token 2 órának Dat
+feature Dat other 2
+feature N other 2
+feature Sg other 2
+searcher Det Det None ['<'] 2
+searcher macro_NPMod * None ['<'] 2
+feature SgPl1_3 Sg 2
+feature Det_Def Indef 2
+feature occupied {'Det'} 2
+edge Det 2 2 Black
+feature occupied {'macro_NPMod', 'Adj'} 1
+edge Adj 2 1 Black
+token 3 nevezett Nom
+feature Nom other 3
+feature PartPast other 3
+feature macro_NPMod other 3
+searcher NOM_OR_GEN * None ['>]'] 3
+searcher POSTP_SEARCH * 1 ['>]'] 3
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 3
+searcher Nom Nom 0 ['<'] 3
+searcher VFRAME None None None 3
+searcher VFRAME None None None 3
+searcher VFRAME PreV None ['>]'] 3
+searcher VFRAME None None None 3
+searcher VFRAME PreV None ['>]'] 3
+feature NOM_OR_GEN ? 3
+searcher VFRAME PreV None ['<'] 3
+searcher Nom Nom None ['<'] 3
+searcher Acc Acc None ['<'] 3
+searcher Dat Dat None ['<'] 3
+searcher Nom Nom 0 ['<'] 3
+feature occupied {'Acc'} 3
+edge Acc 3 3 Black
+feature occupied {'Dat'} 2
+edge Dat 3 2 Red
+token 4 szobrot Acc
+feature Acc other 4
+feature N other 4
+feature Sg other 4
+searcher Det Det None ['<'] 4
+searcher macro_NPMod * None ['<'] 4
+feature SgPl1_3 Sg 4
+feature Det_Def Indef 4
+feature occupied {'Det'} 4
+edge Det 4 4 Black
+feature occupied {'PartPast', 'macro_NPMod'} 3
+edge PartPast 4 3 Black
+token 5 állítanak FIN
+feature FIN other 5
+feature V other 5
+feature acc_Indef other 5
+feature Dec other 5
+feature Pres other 5
+feature nom_Pl3 other 5
+searcher Focus * 1 ['<'] 5
+searcher MOD {'Essmod', 'MOD'} None ['<', '>'] 5
+searcher Acc Acc None None 5
+searcher VFRAME None None None 5
+searcher Nom Nom None None 5
+searcher VFRAME None None None 5
+searcher Nom Nom None None 5
+searcher VFRAME None None None 5
+feature occupied {'Focus'} 4
+edge Focus 5 4 Blue
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (állítanak, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:állít#V+V+acc_Indef+Dec+Pres+nom_Pl3'              ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'V', 'Dec', 'nom_Pl3', 'Pres', 'acc_Indef'}) ]
+[ stem  = 'állít#V'                                               ]
+[ tok   = 'állítanak'                                             ],
+Is Unique: None))

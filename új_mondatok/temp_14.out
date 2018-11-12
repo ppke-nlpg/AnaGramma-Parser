@@ -1,0 +1,50 @@
+0 ||:NYITO|	|Nom:két#Num+Num+macro_NPMod+Sg|	|Acc:konstrukció#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:két#Num+Num+macro_NPMod+Sg|	|Acc:konstrukció#N+N+Sg|	|FIN:ajánl#V+V+acc_Indef+Dec+Past+nom_Pl3
+[ anal  = 'Nom:két#Num+Num+macro_NPMod+Sg'        ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'macro_NPMod', 'Num', 'Sg'}) ]
+[ stem  = 'két#Num'                               ]
+[ tok   = 'Két'                                   ]
+
+2 Acc:konstrukció#N+N+Sg|	|FIN:ajánl#V+V+acc_Indef+Dec+Past+nom_Pl3|	|Det:a#Det+Def
+ÉL KÉSZÜLT 2 2 Black Det
+ÉL KÉSZÜLT 2 1 Black Num
+[ anal  = 'Acc:konstrukció#N+N+Sg' ]
+[ main  = 'Acc'                    ]
+[ other = frozenset({'N', 'Sg'})   ]
+[ stem  = 'konstrukció#N'          ]
+[ tok   = 'konstrukciót'           ]
+
+3 FIN:ajánl#V+V+acc_Indef+Dec+Past+nom_Pl3|	|Det:a#Det+Def|	|Dat:devizahiteles#N+N+Pl+PUNCT
+ÉL KÉSZÜLT 3 2 Blue Focus
+ÉL KÉSZÜLT 3 2 Red Acc
+ÉL KÉSZÜLT 0 3 Black Fin
+[ anal  = 'FIN:ajánl#V+V+acc_Indef+Dec+Past+nom_Pl3'              ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'V', 'Past', 'nom_Pl3', 'acc_Indef', 'Dec'}) ]
+[ stem  = 'ajánl#V'                                               ]
+[ tok   = 'ajánlottak'                                            ]
+
+4 Det:a#Det+Def|	|Dat:devizahiteles#N+N+Pl+PUNCT|	|||:NYITO
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+5 Dat:devizahiteles#N+N+Pl+PUNCT|	|||:NYITO|	|||:NYITO
+ÉL KÉSZÜLT 5 4 Black Det
+ÉL KÉSZÜLT 3 5 Red Dat
+ÉL KÉSZÜLT 3 3 Black Nom
+[ anal  = 'Dat:devizahiteles#N+N+Pl+PUNCT' ]
+[ main  = 'Dat'                            ]
+[ other = frozenset({'Pl', 'N', 'PUNCT'})  ]
+[ stem  = 'devizahiteles#N'                ]
+[ tok   = 'devizahiteleseknek.'            ]
+

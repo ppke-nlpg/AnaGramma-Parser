@@ -1,0 +1,17 @@
+token 0 # ||
+token 1 Két Nom
+token 2 konstrukciót Acc
+edge Det 2 2 Black
+edge Num 2 1 Black
+token 3 ajánl FIN
+edge Focus 3 2 Blue
+edge Acc 3 2 Red
+edge Fin 0 3 Black
+token 4 a Det
+token 5 devizahiteleseknek Dat
+edge Det 5 4 Black
+edge Dat 3 5 Red
+token 6 a Det
+token 7 Bankszövetség. Nom
+edge Det 7 6 Black
+edge Nom 3 7 Red

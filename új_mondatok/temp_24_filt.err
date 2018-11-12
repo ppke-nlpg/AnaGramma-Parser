@@ -1,0 +1,25 @@
+token 0 # ||
+token 1 Engem Acc
+edge Det 1 1 Black
+token 2 nem MOD
+token 3 érdekel FIN
+edge Focus 3 2 Blue
+edge MOD 3 2 Red
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (érdekel, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:érdekel#V+V+acc_Indef+Dec+Pres+nom_Sg3'            ]
+[ main  = 'FIN'                                                   ]
+[ other = frozenset({'acc_Indef', 'V', 'Pres', 'Dec', 'nom_Sg3'}) ]
+[ stem  = 'érdekel#V'                                             ]
+[ tok   = 'érdekel'                                               ],
+Is Unique: None))

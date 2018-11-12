@@ -1,0 +1,25 @@
+0 ||:NYITO|	|Nom:Géza#N+N+Sg+PropN|	|Nom:bácsi#N+N+Sg
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Nom:Géza#N+N+Sg+PropN|	|Nom:bácsi#N+N+Sg|	|FIN:meg|tanít#V+PreVV+FOC+V+acc_Def+Dec+Past+nom_Sg3+acc_SgPl3
+ÉL KÉSZÜLT 1 1 Black Det
+[ anal  = 'Nom:Géza#N+N+Sg+PropN'         ]
+[ main  = 'Nom'                           ]
+[ other = frozenset({'PropN', 'N', 'Sg'}) ]
+[ stem  = 'Géza#N'                        ]
+[ tok   = 'Géza'                          ]
+
+2 Nom:bácsi#N+N+Sg|	|FIN:meg|tanít#V+PreVV+FOC+V+acc_Def+Dec+Past+nom_Sg3+acc_SgPl3|	|Det:a#Det+Def
+ÉL KÉSZÜLT 2 2 Black Det
+[ anal  = 'Nom:bácsi#N+N+Sg'     ]
+[ main  = 'Nom'                  ]
+[ other = frozenset({'N', 'Sg'}) ]
+[ stem  = 'bácsi#N'              ]
+[ tok   = 'bácsi'                ]
+
+3 FIN:meg|tanít#V+PreVV+FOC+V+acc_Def+Dec+Past+nom_Sg3+acc_SgPl3|	|Det:a#Det+Def|	|Acc:hal#N+N+Pl
+ÉL KÉSZÜLT 3 3 Blue Focus

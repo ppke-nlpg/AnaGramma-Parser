@@ -1,0 +1,40 @@
+0 ||:NYITO|	|Det:az#Det+Def|	|Dat:ember#N+N+Pl
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 Det:az#Det+Def|	|Dat:ember#N+N+Pl|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg
+[ anal  = 'Det:az#Det+Def'   ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'az#Det'           ]
+[ tok   = 'Az'               ]
+
+2 Dat:ember#N+N+Pl|	|Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Ins:kérdés#N+N+Pl
+ÉL KÉSZÜLT 2 1 Black Det
+[ anal  = 'Dat:ember#N+N+Pl'     ]
+[ main  = 'Dat'                  ]
+[ other = frozenset({'N', 'Pl'}) ]
+[ stem  = 'ember#N'              ]
+[ tok   = 'embereknek'           ]
+
+3 Nom:fontos#Adj+Adj+macro_NPMod+Sg|	|Ins:kérdés#N+N+Pl|	|FIN:kell#V+V+acc_Indef+Dec+Pres+nom_Sg3
+[ anal  = 'Nom:fontos#Adj+Adj+macro_NPMod+Sg'     ]
+[ main  = 'Nom'                                   ]
+[ other = frozenset({'Sg', 'macro_NPMod', 'Adj'}) ]
+[ stem  = 'fontos#Adj'                            ]
+[ tok   = 'fontos'                                ]
+
+4 Ins:kérdés#N+N+Pl|	|FIN:kell#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Inf:foglalkozik#V+V
+ÉL KÉSZÜLT 4 4 Black Det
+ÉL KÉSZÜLT 4 3 Black Adj
+[ anal  = 'Ins:kérdés#N+N+Pl'    ]
+[ main  = 'Ins'                  ]
+[ other = frozenset({'N', 'Pl'}) ]
+[ stem  = 'kérdés#N'             ]
+[ tok   = 'kérdésekkel'          ]
+
+5 FIN:kell#V+V+acc_Indef+Dec+Pres+nom_Sg3|	|Inf:foglalkozik#V+V|	|Det:az#Det+Def
+ÉL KÉSZÜLT 5 4 Blue Focus

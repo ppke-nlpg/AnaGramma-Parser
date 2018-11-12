@@ -1,0 +1,30 @@
+0 ||:NYITO|	|MOD:egyedül#Adv|	|Det:a#Det+Def
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 MOD:egyedül#Adv|	|Det:a#Det+Def|	|Acc:Chelsea#N+N+Sg+PropN
+[ anal  = 'MOD:egyedül#Adv' ]
+[ main  = 'MOD'             ]
+[ other = frozenset()       ]
+[ stem  = 'egyedül#Adv'     ]
+[ tok   = 'Egyedül'         ]
+
+2 Det:a#Det+Def|	|Acc:Chelsea#N+N+Sg+PropN|	|Nom:ver#PartPres+PartPres+macro_NPMod
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+3 Acc:Chelsea#N+N+Sg+PropN|	|Nom:ver#PartPres+PartPres+macro_NPMod|	|Nom:MU#N+N+Sg+PropN
+ÉL KÉSZÜLT 3 2 Black Det
+[ anal  = 'Acc:Chelsea#N+N+Sg+PropN'      ]
+[ main  = 'Acc'                           ]
+[ other = frozenset({'PropN', 'Sg', 'N'}) ]
+[ stem  = 'Chelsea#N'                     ]
+[ tok   = 'Chelsea-t'                     ]
+
+4 Nom:ver#PartPres+PartPres+macro_NPMod|	|Nom:MU#N+N+Sg+PropN|	|Nom:százszázalékos#Adj+Adj+macro_NPMod+Sg

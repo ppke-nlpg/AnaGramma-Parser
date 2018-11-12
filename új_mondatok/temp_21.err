@@ -1,0 +1,43 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Elveszett FIN
+feature FIN other 1
+feature PreVV other 1
+feature FOC other 1
+feature V other 1
+feature acc_Indef other 1
+feature Dec other 1
+feature Past other 1
+feature nom_Sg3 other 1
+searcher Focus * 1 ['<'] 1
+searcher MOD {'Essmod', 'MOD'} None ['<', '>'] 1
+searcher Focus None 0 None 1
+searcher Acc Acc None None 1
+searcher VFRAME None None None 1
+searcher Nom Nom None None 1
+searcher VFRAME None None None 1
+searcher Focus * 0 ['<'] 1
+searcher Nom Nom None None 1
+searcher VFRAME None None None 1
+feature occupied {'Focus'} 1
+edge Focus 1 1 Blue
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (Elveszett, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:el|veszik#V+PreVV+FOC+V+acc_Indef+Dec+Past+nom_Sg3'                ]
+[ main  = 'FIN'                                                                   ]
+[ other = frozenset({'V', 'Past', 'nom_Sg3', 'Dec', 'acc_Indef', 'FOC', 'PreVV'}) ]
+[ stem  = 'el|veszik#V'                                                           ]
+[ tok   = 'Elveszett'                                                             ],
+Is Unique: None))

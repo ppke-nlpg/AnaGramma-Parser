@@ -1,0 +1,85 @@
+token 0 # ||
+feature || other 0
+feature NYITO other 0
+searcher FIN FIN None ['<', '>'] 0
+token 1 Megfelelve MOD
+feature MOD other 1
+feature PreVV other 1
+feature Ger other 1
+feature Ger other 1
+token 2 a Det
+feature Det other 2
+feature Def other 2
+feature Det_Def Def 2
+token 3 kritériumoknak Dat
+feature Dat other 3
+feature N other 3
+feature Pl other 3
+searcher Det Det None ['<'] 3
+searcher macro_NPMod * None ['<'] 3
+feature SgPl1_3 Pl 3
+feature occupied {'Det'} 2
+edge Det 3 2 Black
+token 4 Mari Nom
+feature Nom other 4
+feature N other 4
+feature Sg other 4
+feature PropN other 4
+searcher NOM_OR_GEN * None ['>]'] 4
+searcher POSTP_SEARCH * 1 ['>]'] 4
+searcher PUNCT_OR_FIN_SEARCH {'FIN', 'PUNCT'} None ['>]'] 4
+searcher Det Det None ['<'] 4
+searcher macro_NPMod * None ['<'] 4
+feature SgPl1_3 Sg 4
+searcher Det Det None None 4
+searcher Det Det None ['<'] 4
+feature Det_Def Def 4
+feature occupied {'Det'} 4
+edge Det 4 4 Black
+feature NOM_OR_GEN ? 4
+token 5 nyugodtan Essmod
+feature Essmod other 5
+feature Adj other 5
+feature macro_NPMod other 5
+feature Sg other 5
+feature SgPl1_3 Sg 5
+token 6 bízhat FIN
+feature FIN other 6
+feature V other 6
+feature acc_Indef other 6
+feature Dec other 6
+feature Pres other 6
+feature Hat other 6
+feature nom_Sg3 other 6
+searcher Focus * 1 ['<'] 6
+searcher MOD {'Essmod', 'MOD'} None ['<', '>'] 6
+searcher Acc Acc None None 6
+searcher VFRAME None None None 6
+searcher Nom Nom None None 6
+searcher VFRAME None None None 6
+searcher Nom Nom None None 6
+searcher VFRAME None None None 6
+feature occupied {'Focus'} 5
+edge Focus 6 5 Blue
+feature occupied {'MOD'} 5
+edge MOD 6 5 Red
+feature occupied {'MOD'} 1
+edge MOD 6 1 Red
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 204, in main
+    prepare_and_fire(pattern_bank, pool, handle, curr_window)   # Do everything functional...
+  File "main.py", line 167, in prepare_and_fire
+    reuse, ret = act.search(tok, pool, is_rightmost=i == len(curr_window) - 1)
+  File "/home/dlazesz/PycharmProjects/elemzov2/searcher.py", line 183, in search
+    raise TypeError(current_tok, self)
+TypeError: (bízhat, Searcher(Name: VFRAME,
+Condition: None,
+Direction: None,
+Initator: [ anal  = 'FIN:bízik#V+V+acc_Indef+Dec+Pres+Hat+nom_Sg3'                 ]
+[ main  = 'FIN'                                                          ]
+[ other = frozenset({'Pres', 'V', 'nom_Sg3', 'acc_Indef', 'Hat', 'Dec'}) ]
+[ stem  = 'bízik#V'                                                      ]
+[ tok   = 'bízhat'                                                       ],
+Is Unique: None))

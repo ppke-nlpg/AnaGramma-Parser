@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "main.py", line 218, in <module>
+    main(default_text)
+  File "main.py", line 198, in main
+    for handle, curr_window in prepare_input(input_text, default_n, Mosaic(mosaic_list)):
+  File "/home/dlazesz/PycharmProjects/elemzov2/flexibleWindow.py", line 71, in __next__
+    self.window = list(next(zip(*self.tee)))
+  File "/home/dlazesz/PycharmProjects/elemzov2/flexibleWindow.py", line 26, in _gen
+    newval = next(self.input_text)  # fetch a new value and
+  File "/home/dlazesz/PycharmProjects/elemzov2/flexibleWindow.py", line 45, in _add_padding
+    for j in iterator:
+  File "/home/dlazesz/PycharmProjects/elemzov2/windowedMorphology.py", line 66, in _morphology_generator
+    token = morph(nexti)  # Morphology API
+  File "/home/dlazesz/PycharmProjects/elemzov2/windowedMorphology.py", line 35, in _morphology_lookup
+    for morph_anals in [[morph_converter(word)]]:  # morphologyP[word]:
+  File "/home/dlazesz/PycharmProjects/elemzov2/ling_rules/morphconverter/morphologyConverter.py", line 427, in morph_converter
+    split_pos = nominals_main_sub[tag[1:].split(']', 1)[0]]
+KeyError: 'SZN|DIGIT'

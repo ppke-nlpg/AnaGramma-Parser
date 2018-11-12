@@ -1,0 +1,48 @@
+0 ||:NYITO|	|MOD:meg|felel#V+PreVV+Ger+Ger|	|Det:a#Det+Def
+[ anal  = '||:NYITO'           ]
+[ main  = '||'                 ]
+[ other = frozenset({'NYITO'}) ]
+[ stem  = 'NYITO'              ]
+[ tok   = '#'                  ]
+
+1 MOD:meg|felel#V+PreVV+Ger+Ger|	|Det:a#Det+Def|	|Dat:kritérium#N+N+Pl
+[ anal  = 'MOD:meg|felel#V+PreVV+Ger+Ger' ]
+[ main  = 'MOD'                           ]
+[ other = frozenset({'PreVV', 'Ger'})     ]
+[ stem  = 'meg|felel#V'                   ]
+[ tok   = 'Megfelelve'                    ]
+
+2 Det:a#Det+Def|	|Dat:kritérium#N+N+Pl|	|Nom:Mari#N+N+Sg+PropN
+[ anal  = 'Det:a#Det+Def'    ]
+[ main  = 'Det'              ]
+[ other = frozenset({'Def'}) ]
+[ stem  = 'a#Det'            ]
+[ tok   = 'a'                ]
+
+3 Dat:kritérium#N+N+Pl|	|Nom:Mari#N+N+Sg+PropN|	|Essmod:nyugodt#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 3 2 Black Det
+[ anal  = 'Dat:kritérium#N+N+Pl' ]
+[ main  = 'Dat'                  ]
+[ other = frozenset({'N', 'Pl'}) ]
+[ stem  = 'kritérium#N'          ]
+[ tok   = 'kritériumoknak'       ]
+
+4 Nom:Mari#N+N+Sg+PropN|	|Essmod:nyugodt#Adj+Adj+macro_NPMod+Sg|	|FIN:bízik#V+V+acc_Indef+Dec+Pres+Hat+nom_Sg3
+ÉL KÉSZÜLT 4 4 Black Det
+[ anal  = 'Nom:Mari#N+N+Sg+PropN'         ]
+[ main  = 'Nom'                           ]
+[ other = frozenset({'Sg', 'N', 'PropN'}) ]
+[ stem  = 'Mari#N'                        ]
+[ tok   = 'Mari'                          ]
+
+5 Essmod:nyugodt#Adj+Adj+macro_NPMod+Sg|	|FIN:bízik#V+V+acc_Indef+Dec+Pres+Hat+nom_Sg3|	|Det:a#Det+Def
+[ anal  = 'Essmod:nyugodt#Adj+Adj+macro_NPMod+Sg' ]
+[ main  = 'Essmod'                                ]
+[ other = frozenset({'Sg', 'Adj', 'macro_NPMod'}) ]
+[ stem  = 'nyugodt#Adj'                           ]
+[ tok   = 'nyugodtan'                             ]
+
+6 FIN:bízik#V+V+acc_Indef+Dec+Pres+Hat+nom_Sg3|	|Det:a#Det+Def|	|Nom:kedvező#Adj+Adj+macro_NPMod+Sg
+ÉL KÉSZÜLT 6 5 Blue Focus
+ÉL KÉSZÜLT 6 5 Red MOD
+ÉL KÉSZÜLT 6 1 Red MOD

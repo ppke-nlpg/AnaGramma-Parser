@@ -1,0 +1,10 @@
+ÉL KÉSZÜLT 2 1 Blue Focus
+ÉL KÉSZÜLT 2 1 Red Dat
+ÉL KÉSZÜLT 0 2 Black Fin
+ÉL KÉSZÜLT 4 3 Black Det
+ÉL KÉSZÜLT 6 6 Black Det
+ÉL KÉSZÜLT 6 4 Red Gen
+ÉL KÉSZÜLT 6 5 Black Adj
+ÉL KÉSZÜLT 2 6 Red Acc
+ÉL KÉSZÜLT 8 7 Black Det
+ÉL KÉSZÜLT 2 8 Red Nom

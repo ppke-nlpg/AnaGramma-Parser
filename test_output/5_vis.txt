@@ -1,0 +1,89 @@
+token 0 # ||
+token 1 Ma MOD
+token 2 várják FIN
+edge Focus 2 1 Blue
+edge MOD 2 1 Red
+edge Fin 0 2 Black
+token 3 az Det
+token 4 önkéntesek Nom
+edge Det 4 3 Black
+token 5 jelentkezését Acc
+edge Det 5 5 Black
+edge Gen 5 4 Red
+edge Acc 2 5 Red
+token 6 a Det
+token 7 Hősök Nom
+edge Det 7 6 Black
+token 8 terén. Sup
+edge Det 8 8 Black
+edge Gen 8 7 Red
+edge Sup 2 8 Red
+edge Nom 2 2 Black
+token 9 Folyamatosan Essmod
+token 10 indulnak FIN
+edge Focus 10 9 Blue
+edge MOD 10 9 Red
+token 11 a Det
+token 12 buszok Nom
+edge Det 12 11 Black
+edge Nom 10 12 Red
+token 13 a Det
+token 14 havazás Nom
+edge Det 14 13 Black
+edge által#PostP 15 14 Black
+token 15 által PostP
+token 16 leginkább MOD
+edge MOD 10 16 Red
+token 17 sújtott Nom
+edge PostP 17 15 Red
+token 18 útszakaszokhoz. All
+edge Det 18 18 Black
+edge PartPast 18 17 Black
+edge All 10 18 Red
+token 19 Ötszáz Nom
+token 20 autó Nom
+edge Det 20 20 Black
+edge Num 20 19 Black
+token 21 vesztegel FIN
+edge Focus 21 20 Blue
+edge Nom 21 20 Red
+token 22 az Det
+token 23 utakon. Sup
+edge Det 23 22 Black
+edge Sup 21 23 Red
+token 24 A Det
+token 25 honvédség Nom
+edge Det 25 24 Black
+token 26 folyamatosan Essmod
+token 27 részt Acc
+edge Det 27 27 Black
+token 28 vesz FIN
+edge Focus 28 27 Blue
+edge MOD 28 26 Red
+edge Acc 28 27 Red
+edge Nom 28 25 Red
+token 29 a Det
+token 30 mentési Nom
+token 31 munkálatokban. Ine
+edge Det 31 29 Black
+edge Adj 31 30 Black
+edge Ine 28 31 Red
+token 32 A Det
+token 33 Volánbusz Nom
+edge Det 33 32 Black
+token 34 rendkívüli Nom
+token 35 közlekedési Nom
+token 36 rend Nom
+edge Det 36 36 Black
+edge Adj 36 35 Black
+edge Adj 36 34 Black
+edge szerint#PostP 37 36 Black
+token 37 szerint PostP
+token 38 indítja FIN
+edge Focus 38 37 Blue
+edge Nom 38 33 Red
+edge PostP 38 37 Red
+token 39 a Det
+token 40 járatokat. Acc
+edge Det 40 39 Black
+edge Acc 38 40 Red

@@ -1,0 +1,51 @@
+token 0 # ||
+token 1 Holnap MOD
+token 2 a Det
+token 3 korábbi Φ
+token 4 elnökjelölttel Ins
+edge Det 4 2 Black
+edge Adj 4 3 Black
+token 5 egyeztet FIN
+edge Focus 5 4 Blue
+edge MOD 5 1 Red
+edge Ins 5 4 Red
+edge Fin 0 5 Black
+token 6 a Det
+token 7 megválasztott Φ
+edge PreV 7 7 Black
+token 8 elnök. Φ
+edge Det 8 6 Black
+edge PartPast 8 7 Black
+edge Nom 5 8 Red
+token 9 Donald_Trump Φ
+edge Det 9 9 Black
+token 10 a Det
+token 11 sajtóhírek Φ
+edge Det 11 10 Black
+token 12 szerint PostP
+edge szerint#PostP 12 11 Black
+token 13 miniszteri Φ
+token 14 posztot Acc
+edge Det 14 14 Black
+edge Adj 14 13 Black
+token 15 ajánl FIN
+edge Focus 15 14 Blue
+edge PreV 15 16 Black
+edge Acc 15 14 Red
+edge Nom 15 9 Red
+edge PostP 15 12 Red
+token 16 fel PreV
+token 17 a Det
+token 18 kampány Φ
+edge Det 18 17 Black
+token 19 alatt PostP
+edge alatt#PostP 19 18 Black
+token 20 őt Acc
+edge Det 20 20 Black
+token 21 kritizáló Φ
+edge Acc 21 20 Red
+edge PostP 21 19 Red
+token 22 politikusnak. Dat
+edge Det 22 22 Black
+edge PartPres 22 21 Black
+edge Dat 15 22 Red
